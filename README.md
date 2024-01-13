@@ -1,7 +1,7 @@
 # chihuahuajs
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/545047/188804067-28e67e5e-0214-4449-ab04-2e0c564a6885.svg" width="80"><br />
+  <img src="https://i.imgur.com/6xyVTQX.png" width="80"><br />
     chihuahuajs
 </p>
 
@@ -9,7 +9,7 @@
 ## install
 
 ```sh
-npm install chihuahuajs
+npm i @atmoner/chihuahuajs
 ```
 ## Table of contents
 
@@ -35,9 +35,9 @@ npm install chihuahuajs
 ### RPC Clients
 
 ```js
-import { chihuahua } from 'chihuahuajs';
+import { chihuahuaJs } from 'chihuahuajs';
 
-const { createRPCQueryClient } = chihuahua.ClientFactory; 
+const { createRPCQueryClient } = chihuahuaJs.chihuahua.ClientFactory; 
 const client = await createRPCQueryClient({ rpcEndpoint: RPC_ENDPOINT });
 
 // now you can query the cosmos modules
@@ -51,16 +51,16 @@ const balances = await client.chihuahua.exchange.v1beta1
 
 ### Composing Messages
 
-Import the `chihuahua` object from `chihuahuajs`. 
+Import the `chihuahuaJs` object from `chihuahuajs`. 
 
 ```js
-import { chihuahua } from 'chihuahuajs';
+import { chihuahuaJs } from 'chihuahuajs';
 
 const {
     createSpotLimitOrder,
     createSpotMarketOrder,
     deposit
-} = chihuahua.exchange.v1beta1.MessageComposer.withTypeUrl;
+} = chihuahuaJs.chihuahua.exchange.v1beta1.MessageComposer.withTypeUrl;
 ```
 
 #### CosmWasm Messages
