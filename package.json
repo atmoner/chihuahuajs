@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@cosmology/telescope": "^1.0.1",
+    "@cosmology/lcd": "^0.13.3",
     "@protobufs/cosmos": "^0.1.0",
     "@protobufs/cosmwasm": "^0.1.1",
     "@protobufs/gogoproto": "^0.0.10",
